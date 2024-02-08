@@ -1,0 +1,17 @@
+
+
+<h1> Bienvenu a {{name | uppercase}} : {{date | date: 'dd-MMMM-YYYY'}}</h1>
+<a [href]="link" > cliquer ici pour continuer</a>
+<p>Mon test de composant angular marche bien </p>
+<div>
+  <p>Counter <strong [ngClass]="{'active': counters>=10 }" >{{counters}}</strong> </p>
+
+  <button *ngIf="counters<=10" (click)="counterChange()"  >Increment</button>
+
+</div>
+
+
+
+
+
+

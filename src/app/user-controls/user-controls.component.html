@@ -1,0 +1,25 @@
+
+<button (click)="tooggle()" > Change </button>
+@if (isAdmin) {
+  <p>Vous êtes administrateur</p>
+} @else {
+  <p>Bonjour User</p>
+}
+
+
+@switch (fruit) {
+  @case ('Apple') { <p>You selected an Apple.</p> }
+  @case ('Orange') { <p>You selected an Orange.</p> }
+  @case ('Banana') { <p>You selected a Banana.</p> }
+  @default { <p>Unknown Fruit.</p> }
+}
+
+
+
+@for (fruit of fruits; track $index) {
+  <ul>
+    <li>{{fruit}}</li>
+  </ul>
+} @empty {
+  Empty list of fruits
+}
